@@ -1,0 +1,17 @@
+ext {
+    versions = [
+            springBoot              : "2.7.8",
+            postgreSql              : "42.5.3",
+            lombok                  : "1.18.26",
+            mapstruct               : "1.5.3.Final"
+    ]
+    libs = [
+            springBootStarterWeb        : "org.springframework.boot:spring-boot-starter-web:$versions.springBoot",
+            springBootStarterDataJpa    : "org.springframework.boot:spring-boot-starter-data-jpa:$versions.springBoot",
+            postgreSql                  : "org.postgresql:postgresql:$versions.postgreSql",
+            lombok                      : "org.projectlombok:lombok:$versions.lombok",
+            mapstruct                   : "org.mapstruct:mapstruct:$versions.mapstruct",
+            mapstructProcessor          : "org.mapstruct:mapstruct-processor:$versions.mapstruct",
+
+    ]
+}
