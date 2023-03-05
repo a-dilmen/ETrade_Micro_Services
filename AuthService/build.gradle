@@ -1,5 +1,7 @@
 buildscript {
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:$versions.springBoot")
+        classpath("org.springframework.boot:spring-boot-starter-data-jpa:$versions.springBoot")
+        classpath("org.postgresql:postgresql:$versions.postgreSql")
     }
 }
