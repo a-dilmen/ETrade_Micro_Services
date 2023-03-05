@@ -3,9 +3,11 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://34.27.48.88:5432/UserDB
-    username: postgres
-    password: root
+    url: jdbc:postgresql://${ETRADE_PG_GCLOUD_URL}/AuthDB
+    username: ${ETRADE_PG_USERNAME}
+    password: ${ETRADE_PG_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
+myUrls:
+  userServiceUrl: ${ETRADE_URLS_USER}

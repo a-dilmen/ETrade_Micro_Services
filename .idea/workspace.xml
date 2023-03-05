@@ -4,35 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="Auth mapper dto register end point created">
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/UserSaveRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/manager/UserManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/constants/RestEndPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/dto/request/UserSaveRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/dto/response/AuthRegisterResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/exception/EErrorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/exception/ErrorMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/exception/UserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/mapper/IUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/repository/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/repository/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/repository/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/utils/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/utils/ServiceManager.java" afterDir="false" />
+    <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="User service structure created Auth-User Open Feign enabled">
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/BaseRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/LoginRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/AuthServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/AuthRegisterRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/AuthRegisterRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/manager/IAuthMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/mapper/IAuthMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/manager/IUserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/manager/IUserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/mapper/IAuthMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/mapper/IAuthMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/entity/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/entity/Auth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +34,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/AuthService">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/UserService">
           <activation />
         </task>
         <projects_view>
@@ -79,6 +64,24 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ETrade_Micro_Services" type="f1a62948:ProjectNode" />
+                <item name="UserService" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ETrade_Micro_Services" type="f1a62948:ProjectNode" />
+                <item name="UserService" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ETrade_Micro_Services" type="f1a62948:ProjectNode" />
+                <item name="UserService" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -98,6 +101,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -107,19 +113,19 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/abdul/Desktop/BilgeAdam/Leisure/ETrade_Micro_Services/UserService/src/main/java/com/dilmen",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/abdul/Desktop/BilgeAdam/Leisure/ETrade_Micro_Services/UserService/src/main/java/com/dilmen&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.dilmen.dto.request" />
@@ -163,7 +169,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ETrade_Micro_Services [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ETrade_Micro_Services [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -174,7 +180,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -205,10 +211,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ETrade_Micro_Services:AuthService [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ETrade_Micro_Services:UserService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/AuthService" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/UserService" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -216,7 +222,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -228,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AuthServiceApplication" />
-        <item itemvalue="Gradle.ETrade_Micro_Services:AuthService [build]" />
-        <item itemvalue="Gradle.ETrade_Micro_Services:AuthService [clean]" />
         <item itemvalue="Application.UserServiceApplication" />
-        <item itemvalue="Gradle.ETrade_Micro_Services [dependencies]" />
+        <item itemvalue="Gradle.ETrade_Micro_Services:AuthService [build]" />
+        <item itemvalue="Application.AuthServiceApplication" />
+        <item itemvalue="Gradle.ETrade_Micro_Services:UserService [build]" />
+        <item itemvalue="Gradle.ETrade_Micro_Services [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678030109642</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="User service structure created Auth-User Open Feign enabled">
+      <created>1678041418562</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678041418562</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -288,7 +301,8 @@
     <MESSAGE value="Auth-Product-Sales-User micro services are created" />
     <MESSAGE value="Auth micro services package and exception structure created" />
     <MESSAGE value="Auth mapper dto register end point created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auth mapper dto register end point created" />
+    <MESSAGE value="User service structure created Auth-User Open Feign enabled" />
+    <option name="LAST_COMMIT_MESSAGE" value="User service structure created Auth-User Open Feign enabled" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,6 +1,7 @@
 package com.dilmen.controller;
 
 import com.dilmen.dto.request.AuthRegisterRequestDto;
+import com.dilmen.dto.request.LoginRequestDto;
 import com.dilmen.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,11 @@ public class AuthController {
         public ResponseEntity<Boolean> register(@RequestBody @Valid AuthRegisterRequestDto dto) {
                 authService.register(dto);
                 return ResponseEntity.ok(true);
+        }
+
+        @PostMapping(LOGIN)
+        public ResponseEntity<String > login(@RequestBody @Valid LoginRequestDto dto){
+                return ResponseEntity.ok(authService.login(dto));
         }
 
 }

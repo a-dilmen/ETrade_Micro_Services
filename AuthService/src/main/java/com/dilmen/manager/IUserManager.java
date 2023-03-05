@@ -10,10 +10,10 @@ import static com.dilmen.constants.RestEndPoints.SAVE;
 
 @FeignClient(
         name = "user-service-feign",
-        url = "http:localhost:9093/api/v1/dev/user",
-        dismiss404 = true
+        url = "${myUrls.userServiceUrl}",
+        decode404 = true
 )
 public interface IUserManager {
         @PostMapping(SAVE)
-        public ResponseEntity<Boolean> save(@RequestBody UserSaveRequestDto dto);
+        ResponseEntity<Boolean> save(@RequestBody UserSaveRequestDto dto);
 }
