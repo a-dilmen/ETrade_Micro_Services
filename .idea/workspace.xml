@@ -5,22 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="Auth mapper dto register end point created">
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/AuthRegisterRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/response/AuthRegisterResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/manager/IAuthMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/IAuthRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/utils/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/utils/ServiceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/UserSaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/manager/UserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/constants/RestEndPoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/dto/request/UserSaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/dto/response/AuthRegisterResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/exception/EErrorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/exception/ErrorMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/exception/UserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/mapper/IUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/repository/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/repository/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/utils/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/utils/ServiceManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/AuthServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/constants/RestEndPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/constants/RestEndPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/AuthRegisterRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/AuthRegisterRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/entity/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/entity/Auth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/manager/IAuthMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/mapper/IAuthMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
     </list>
@@ -79,8 +90,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -102,7 +113,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/abdul/Desktop/BilgeAdam/Leisure/ETrade_Micro_Services/AuthService/src/main/java/com/dilmen/repository/entity",
+    "last_opened_file_path": "C:/Users/abdul/Desktop/BilgeAdam/Leisure/ETrade_Micro_Services/UserService/src/main/java/com/dilmen",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -115,14 +126,17 @@
       <recent name="com.dilmen.dto.response" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\UserService\src\main\java\com\dilmen" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\AuthService\src\main\java\com\dilmen\repository\entity" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\AuthService\src\main\java\com\dilmen\utils" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\AuthService\src\main\java\com\dilmen\exception" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\SalesService\src\main\resources" />
-      <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\ProductService\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dilmen.dto.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AuthServiceApplication">
+  <component name="RunManager" selected="Application.UserServiceApplication">
     <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dilmen.AuthServiceApplication" />
       <module name="ETrade_Micro_Services.AuthService.main" />
@@ -259,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678024241832</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Auth mapper dto register end point created">
+      <created>1678030109641</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678030109642</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

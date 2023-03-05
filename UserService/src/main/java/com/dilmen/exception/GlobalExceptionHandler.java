@@ -27,9 +27,9 @@ public class GlobalExceptionHandler {
         EErrorType errorType = INTERNAL_ERROR;
         return new ResponseEntity<>(createError(errorType,exception), HttpStatus.BAD_REQUEST);
     }
-    @ExceptionHandler(AuthException.class)
+    @ExceptionHandler(UserException.class)
     @ResponseBody
-    public ResponseEntity<ErrorMessage> handleAuthException(AuthException exception){
+    public ResponseEntity<ErrorMessage> handleAuthException(UserException exception){
         return new ResponseEntity<>(createError(exception.getErrorType(),exception),exception.getErrorType().getHttpStatus());
     }
 

@@ -1,7 +1,7 @@
 package com.dilmen.controller;
 
-import com.dilmen.dto.request.AuthRegisterRequestDto;
-import com.dilmen.service.AuthService;
+import com.dilmen.dto.request.UserSaveRequestDto;
+import com.dilmen.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,15 +14,14 @@ import javax.validation.Valid;
 import static com.dilmen.constants.RestEndPoints.*;
 
 @RestController
-@RequestMapping(AUTH)
+@RequestMapping(USER)
 @RequiredArgsConstructor
-public class AuthController {
-        private final AuthService authService;
+public class UserController {
+        private final UserService userService;
 
-        @PostMapping(REGISTER)
-        public ResponseEntity<Boolean> register(@RequestBody @Valid AuthRegisterRequestDto dto) {
-                authService.register(dto);
-                return ResponseEntity.ok(true);
+        @PostMapping(SAVE)
+        public ResponseEntity<Boolean> save(@RequestBody UserSaveRequestDto dto) {
+                return ResponseEntity.ok(userService.saveDto(dto));
         }
 
 }

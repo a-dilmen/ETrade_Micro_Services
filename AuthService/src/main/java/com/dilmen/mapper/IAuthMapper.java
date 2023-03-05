@@ -1,4 +1,4 @@
-package com.dilmen.manager;
+package com.dilmen.mapper;
 
 import com.dilmen.dto.request.AuthRegisterRequestDto;
 import com.dilmen.dto.response.AuthRegisterResponseDto;

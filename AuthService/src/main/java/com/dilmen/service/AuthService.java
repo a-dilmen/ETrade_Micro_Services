@@ -1,7 +1,7 @@
 package com.dilmen.service;
 
 import com.dilmen.dto.request.AuthRegisterRequestDto;
-import com.dilmen.manager.IAuthMapper;
+import com.dilmen.mapper.IAuthMapper;
 import com.dilmen.repository.IAuthRepository;
 import com.dilmen.repository.entity.Auth;
 import com.dilmen.utils.ServiceManager;
@@ -18,7 +18,7 @@ public class AuthService extends ServiceManager<Auth,Long> {
 
         public Boolean register(AuthRegisterRequestDto dto){
 
-                authRepository.save(IAuthMapper.INSTANCE.authFromAuthRegisterRequestDto(dto));
+                save(IAuthMapper.INSTANCE.authFromAuthRegisterRequestDto(dto));
                 return true;
         }
 }
