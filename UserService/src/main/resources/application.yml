@@ -1,15 +1,8 @@
-server:
-  port: 9093
 spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${ETRADE_PG_GCLOUD_URL}/AuthDB
-    username: ${ETRADE_PG_USERNAME}
-    password: ${ETRADE_PG_PASSWORD}
-  jpa:
-    hibernate:
-      ddl-auto: update
-myUrls:
-  userServiceUrl: ${ETRADE_URLS_USER}
-myJwt:
-  passwordKey: ${ETRADE_JWT_PASSWORD_KEY}
+  cloud:
+    config:
+      uri: http://localhost:8888
+  config:
+    import: "configserver:"
+  application:
+    name: user-micro-service

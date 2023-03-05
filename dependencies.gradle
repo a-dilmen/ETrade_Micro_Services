@@ -1,7 +1,7 @@
 ext {
     versions = [
             springBoot              : "2.7.8",
-            springCloudOpenFeign    : "3.1.5",
+            springCloud             : "3.1.5",
             postgreSql              : "42.5.3",
             lombok                  : "1.18.26",
             mapstruct               : "1.5.3.Final",
@@ -13,7 +13,10 @@ ext {
             springBootStarterDataJpa    : "org.springframework.boot:spring-boot-starter-data-jpa:$versions.springBoot",
             springBootStarterValidation : "org.springframework.boot:spring-boot-starter-validation:$versions.springBoot",
 
-            springCloudOpenFeign        : "org.springframework.cloud:spring-cloud-starter-openfeign:$versions.springCloudOpenFeign",
+            springCloudOpenFeign        : "org.springframework.cloud:spring-cloud-starter-openfeign:$versions.springCloud",
+            springCloudConfig           : "org.springframework.cloud:spring-cloud-starter-config:$versions.springCloud",
+            springCloudConfigClient     : "org.springframework.cloud:spring-cloud-config-client:$versions.springCloud",
+            springCloudConfigServer     : "org.springframework.cloud:spring-cloud-config-server:$versions.springCloud",
 
             postgreSql                  : "org.postgresql:postgresql:$versions.postgreSql",
 

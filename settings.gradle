@@ -3,4 +3,6 @@ include 'AuthService'
 include 'UserService'
 include 'ProductService'
 include 'SalesService'
+include 'ConfigServer'
+include 'ConfigServerGit'
 
