@@ -4,17 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="User service structure created Auth-User Open Feign enabled">
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/BaseRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/LoginRequestDto.java" afterDir="false" />
+    <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="Environment variables added to application yml-s">
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/utils/JwtTokenManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/dto/request/BaseRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/utils/JwtTokenManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/manager/IUserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/manager/IUserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/mapper/IAuthMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/mapper/IAuthMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/entity/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/entity/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/exception/EErrorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/exception/EErrorType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/exception/EErrorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/exception/EErrorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,6 +142,7 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.dilmen.dto.request" />
+      <recent name="com.dilmen.utils" />
     </key>
   </component>
   <component name="RunManager" selected="Application.UserServiceApplication">
@@ -293,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678041418562</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Environment variables added to application yml-s">
+      <created>1678048441223</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678048441223</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -302,7 +312,8 @@
     <MESSAGE value="Auth micro services package and exception structure created" />
     <MESSAGE value="Auth mapper dto register end point created" />
     <MESSAGE value="User service structure created Auth-User Open Feign enabled" />
-    <option name="LAST_COMMIT_MESSAGE" value="User service structure created Auth-User Open Feign enabled" />
+    <MESSAGE value="Environment variables added to application yml-s" />
+    <option name="LAST_COMMIT_MESSAGE" value="Environment variables added to application yml-s" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

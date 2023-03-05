@@ -8,7 +8,9 @@ import com.dilmen.manager.IUserManager;
 import com.dilmen.mapper.IAuthMapper;
 import com.dilmen.repository.IAuthRepository;
 import com.dilmen.repository.entity.Auth;
+import com.dilmen.utils.JwtTokenManager;
 import com.dilmen.utils.ServiceManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -17,6 +19,8 @@ import java.util.Optional;
 public class AuthService extends ServiceManager<Auth, Long> {
         private IAuthRepository authRepository;
         private IUserManager userManager;
+        @Autowired
+        private JwtTokenManager tokenManager;
 
         public AuthService(IAuthRepository authRepository, IUserManager userManager) {
                 super(authRepository);
@@ -33,7 +37,8 @@ public class AuthService extends ServiceManager<Auth, Long> {
         public String login(LoginRequestDto dto) {
                 Optional<Auth> auth = authRepository.findOptionalByUsernameAndPassword(dto.getUsername(), dto.getPassword());
                 if (auth.isEmpty()) throw new AuthException(EErrorType.USER_NOT_FOUND);
-
-                return "";
+                Optional<String> token = tokenManager.createToken(auth.get().getId());
+                if (token.isEmpty()) throw new AuthException(EErrorType.TOKEN_EROOR);
+                return token.get();
         }
 }

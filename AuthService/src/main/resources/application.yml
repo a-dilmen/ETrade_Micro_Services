@@ -11,3 +11,6 @@ spring:
       ddl-auto: update
 myUrls:
   userServiceUrl: ${ETRADE_URLS_USER}
+
+myJwt:
+  passwordKey: ${ETRADE_JWT_PASSWORD_KEY}
