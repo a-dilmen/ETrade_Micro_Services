@@ -1,3 +1,6 @@
 rootProject.name = 'ETrade_Micro_Services'
 include 'AuthService'
+include 'UserService'
+include 'ProductService'
+include 'SalesService'
 
