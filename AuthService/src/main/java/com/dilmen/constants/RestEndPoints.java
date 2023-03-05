@@ -9,7 +9,7 @@ public class RestEndPoints {
         public static final String TEST = "/test";
 
 
-        public static final String AUTH = "/auth";
+        public static final String AUTH = API + VERSION + DEV + "/auth";
 
 
         public static final String SAVE = "/save";
@@ -19,10 +19,6 @@ public class RestEndPoints {
         public static final String FINDBYID = "/findbyid";
         public static final String REGISTER = "/register";
         public static final String LOGIN = "/login";
-
-
-
-
 
 
 }

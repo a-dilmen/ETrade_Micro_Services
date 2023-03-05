@@ -3,7 +3,8 @@ ext {
             springBoot              : "2.7.8",
             postgreSql              : "42.5.3",
             lombok                  : "1.18.26",
-            mapstruct               : "1.5.3.Final"
+            mapstruct               : "1.5.3.Final",
+            swaggerui               : "1.6.14",
     ]
     libs = [
             springBootStarterWeb        : "org.springframework.boot:spring-boot-starter-web:$versions.springBoot",
@@ -12,6 +13,6 @@ ext {
             lombok                      : "org.projectlombok:lombok:$versions.lombok",
             mapstruct                   : "org.mapstruct:mapstruct:$versions.mapstruct",
             mapstructProcessor          : "org.mapstruct:mapstruct-processor:$versions.mapstruct",
-
+            swaggerui                   : "org.springdoc:springdoc-openapi-ui:$versions.swaggerui"
     ]
 }

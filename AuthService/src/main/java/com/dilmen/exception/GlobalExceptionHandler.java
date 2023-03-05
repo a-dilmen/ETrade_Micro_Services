@@ -24,12 +24,12 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(IllegalArgumentException.class)
     @ResponseBody
     public ResponseEntity<ErrorMessage> handleIllegalArgumentException(IllegalArgumentException exception){
-        EErrorType EErrorType = INTERNAL_ERROR;
-        return new ResponseEntity<>(createError(EErrorType,exception), HttpStatus.BAD_REQUEST);
+        EErrorType errorType = INTERNAL_ERROR;
+        return new ResponseEntity<>(createError(errorType,exception), HttpStatus.BAD_REQUEST);
     }
     @ExceptionHandler(AuthException.class)
     @ResponseBody
-    public ResponseEntity<ErrorMessage> handleSpringMonoException(AuthException exception){
+    public ResponseEntity<ErrorMessage> handleAuthException(AuthException exception){
         return new ResponseEntity<>(createError(exception.getErrorType(),exception),exception.getErrorType().getHttpStatus());
     }
 

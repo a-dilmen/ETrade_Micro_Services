@@ -4,9 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="Auth micro services package and exception structure created">
+    <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="Auth mapper dto register end point created">
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/request/AuthRegisterRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/dto/response/AuthRegisterResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/manager/IAuthMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/IAuthRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/utils/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/utils/ServiceManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/AuthServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/constants/RestEndPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/constants/RestEndPoints.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/entity/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/repository/entity/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +80,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -85,7 +102,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/abdul/Desktop/BilgeAdam/Leisure/ETrade_Micro_Services/AuthService/src/main/java/com/dilmen/exception",
+    "last_opened_file_path": "C:/Users/abdul/Desktop/BilgeAdam/Leisure/ETrade_Micro_Services/AuthService/src/main/java/com/dilmen/repository/entity",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -93,17 +110,22 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dilmen.dto.request" />
+      <recent name="com.dilmen.dto.response" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\AuthService\src\main\java\com\dilmen\repository\entity" />
+      <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\AuthService\src\main\java\com\dilmen\utils" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\AuthService\src\main\java\com\dilmen\exception" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\SalesService\src\main\resources" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\ProductService\src\main\resources" />
-      <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\UserService\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ETrade_Micro_Services:AuthService [build]">
-    <configuration name="SalesServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dilmen.SalesServiceApplication" />
-      <module name="ETrade_Micro_Services.SalesService.main" />
+  <component name="RunManager" selected="Application.AuthServiceApplication">
+    <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dilmen.AuthServiceApplication" />
+      <module name="ETrade_Micro_Services.AuthService.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dilmen.*" />
@@ -192,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AuthServiceApplication" />
         <item itemvalue="Gradle.ETrade_Micro_Services:AuthService [build]" />
         <item itemvalue="Gradle.ETrade_Micro_Services:AuthService [clean]" />
         <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Gradle.ETrade_Micro_Services [dependencies]" />
-        <item itemvalue="Application.SalesServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -230,14 +252,22 @@
       <option name="project" value="LOCAL" />
       <updated>1678024157912</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Auth micro services package and exception structure created">
+      <created>1678024241831</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678024241832</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Auth micro service is created" />
     <MESSAGE value="Auth-Product-Sales-User micro services are created" />
     <MESSAGE value="Auth micro services package and exception structure created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auth micro services package and exception structure created" />
+    <MESSAGE value="Auth mapper dto register end point created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth mapper dto register end point created" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
