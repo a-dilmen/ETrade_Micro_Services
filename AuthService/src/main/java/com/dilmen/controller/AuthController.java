@@ -5,10 +5,7 @@ import com.dilmen.dto.request.LoginRequestDto;
 import com.dilmen.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -29,6 +26,11 @@ public class AuthController {
         @PostMapping(LOGIN)
         public ResponseEntity<String > login(@RequestBody @Valid LoginRequestDto dto){
                 return ResponseEntity.ok(authService.login(dto));
+        }
+
+        @GetMapping("/test")
+        public ResponseEntity<String> test(){
+                return ResponseEntity.ok("hurray");
         }
 
 }
