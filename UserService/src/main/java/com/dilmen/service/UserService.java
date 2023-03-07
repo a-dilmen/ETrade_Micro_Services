@@ -33,10 +33,9 @@ public class UserService extends ServiceManager<User,Long> {
         public List<User> getAll(String token) {
                 Optional<Long> authId = tokenManager.getIdFromToken(token);
                 if (authId.isEmpty()) throw new UserException(EErrorType.INVALID_TOKEN);
-                Optional<User> user = userRepository.findById(authId.get());
+                Optional<User> user = userRepository.findOptionalByAuthId(authId.get());
                 if (user.isEmpty()) throw new UserException(EErrorType.INVALID_TOKEN,"No user found with given token");
                 return findAll();
-
         }
 
 

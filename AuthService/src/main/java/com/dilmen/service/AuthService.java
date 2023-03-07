@@ -6,6 +6,8 @@ import com.dilmen.exception.AuthException;
 import com.dilmen.exception.EErrorType;
 import com.dilmen.manager.IUserManager;
 import com.dilmen.mapper.IAuthMapper;
+import com.dilmen.rabbitmq.model.CreateUser;
+import com.dilmen.rabbitmq.producer.CreateUserProducer;
 import com.dilmen.repository.IAuthRepository;
 import com.dilmen.repository.entity.Auth;
 import com.dilmen.utils.JwtTokenManager;
@@ -21,6 +23,8 @@ public class AuthService extends ServiceManager<Auth, Long> {
         private IUserManager userManager;
         @Autowired
         private JwtTokenManager tokenManager;
+        @Autowired
+        private CreateUserProducer createUserProducer;
 
         public AuthService(IAuthRepository authRepository, IUserManager userManager) {
                 super(authRepository);
@@ -30,7 +34,13 @@ public class AuthService extends ServiceManager<Auth, Long> {
 
         public Boolean register(AuthRegisterRequestDto dto) {
                 Auth auth = save(IAuthMapper.INSTANCE.authFromAuthRegisterRequestDto(dto));
-                userManager.save(IAuthMapper.INSTANCE.userSaveRequestDtoFromAuth(auth));
+//                userManager.save(IAuthMapper.INSTANCE.userSaveRequestDtoFromAuth(auth));
+                createUserProducer.createSendMessage(CreateUser
+                        .builder()
+                                .authid(auth.getId())
+                                .email(auth.getEmail())
+                                .username(auth.getUsername())
+                        .build());
                 return true;
         }
 

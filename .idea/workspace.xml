@@ -4,23 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="Server Configurations are set">
-      <change afterPath="$PROJECT_DIR$/ApiGatewayService/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGatewayService/src/main/java/com/dilmen/ApiGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGatewayService/src/main/java/com/dilmen/fallback/FallbackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ApiGatewayService/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/api-gateway-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="Spring based ApiGateway is set and Zipkin is set for Auth and User services">
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/configuration/rabbit/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/rabbitmq/model/CreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/rabbitmq/producer/CreateUserProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/configuration/rabbit/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/rabbitmq/consumer/CreateUserConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/rabbitmq/model/CreateUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/auth-micro-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/auth-micro-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/user-micro-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/user-micro-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,37 +117,38 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/abdul/Desktop/BilgeAdam/Leisure/ETrade_Micro_Services/ConfigServerGit/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/abdul/Desktop/BilgeAdam/Leisure/ETrade_Micro_Services/UserService/src/main/java/com/dilmen/configuration",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.dilmen.dto.request" />
       <recent name="com.dilmen.dto.response" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\UserService\src\main\java\com\dilmen\configuration" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\ConfigServerGit\src\main\resources" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\ConfigServer\src\main\resources\config-repo" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\UserService\src\main\java\com\dilmen" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\AuthService\src\main\java\com\dilmen\repository\entity" />
-      <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\AuthService\src\main\java\com\dilmen\utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dilmen.rabbitmq.model" />
       <recent name="com.dilmen.dto.request" />
       <recent name="com.dilmen.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ApiGatewayApplication">
+  <component name="RunManager" selected="Application.UserServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dilmen.ApiGatewayApplication" />
       <module name="ETrade_Micro_Services.ApiGatewayService.main" />
@@ -304,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678057126159</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Spring based ApiGateway is set and Zipkin is set for Auth and User services">
+      <created>1678110954943</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678110954943</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -316,7 +323,19 @@
     <MESSAGE value="Environment variables added to application yml-s" />
     <MESSAGE value="Jwt Token implemented on Auth and User services" />
     <MESSAGE value="Server Configurations are set" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server Configurations are set" />
+    <MESSAGE value="Spring based ApiGateway is set and Zipkin is set for Auth and User services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring based ApiGateway is set and Zipkin is set for Auth and User services" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/UserService/src/main/java/com/dilmen/utils/JwtTokenManager.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
