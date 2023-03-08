@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="Spring based ApiGateway is set and Zipkin is set for Auth and User services">
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/configuration/rabbit/RabbitConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/rabbitmq/model/CreateUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/rabbitmq/producer/CreateUserProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/configuration/rabbit/RabbitConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/rabbitmq/consumer/CreateUserConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/rabbitmq/model/CreateUser.java" afterDir="false" />
+    <list default="true" id="3b4cc346-dd5c-41ed-8c3a-3c5428244419" name="Changes" comment="Rabbitmq direct exchange is set">
+      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/elastic-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/configuration/redis/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/dilmen/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/auth-micro-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/auth-micro-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/user-micro-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config-repo/user-micro-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/dilmen/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +38,9 @@
         <task path="$PROJECT_DIR$/UserService">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/ElasticService">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -53,36 +51,18 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ETrade_Micro_Services" type="f1a62948:ProjectNode" />
-                <item name="AuthService" type="2d1252cf:ModuleNode" />
+                <item name="ElasticService" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ETrade_Micro_Services" type="f1a62948:ProjectNode" />
-                <item name="AuthService" type="2d1252cf:ModuleNode" />
+                <item name="ElasticService" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ETrade_Micro_Services" type="f1a62948:ProjectNode" />
-                <item name="AuthService" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ETrade_Micro_Services" type="f1a62948:ProjectNode" />
-                <item name="UserService" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ETrade_Micro_Services" type="f1a62948:ProjectNode" />
-                <item name="UserService" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ETrade_Micro_Services" type="f1a62948:ProjectNode" />
-                <item name="UserService" type="2d1252cf:ModuleNode" />
+                <item name="ElasticService" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
@@ -123,7 +103,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/abdul/Desktop/BilgeAdam/Leisure/ETrade_Micro_Services/UserService/src/main/java/com/dilmen/configuration",
+    "last_opened_file_path": "C:/Users/abdul/Desktop/BilgeAdam/Leisure/ETrade_Micro_Services/ElasticService/src/main/java/com/dilmen",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -136,11 +116,11 @@
       <recent name="com.dilmen.dto.response" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\ElasticService\src\main\java\com\dilmen" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\UserService\src\main\java\com\dilmen\configuration" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\ConfigServerGit\src\main\resources" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\ConfigServer\src\main\resources\config-repo" />
       <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\UserService\src\main\java\com\dilmen" />
-      <recent name="C:\Users\abdul\Desktop\BilgeAdam\Leisure\ETrade_Micro_Services\AuthService\src\main\java\com\dilmen\repository\entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.dilmen.rabbitmq.model" />
@@ -148,7 +128,7 @@
       <recent name="com.dilmen.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserServiceApplication">
+  <component name="RunManager" selected="Application.AuthServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dilmen.ApiGatewayApplication" />
       <module name="ETrade_Micro_Services.ApiGatewayService.main" />
@@ -175,9 +155,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CloudConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dilmen.CloudConfigApplication" />
-      <module name="ETrade_Micro_Services.ConfigServer.main" />
+    <configuration name="ElasticServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dilmen.ElasticServiceApplication" />
+      <module name="ETrade_Micro_Services.ElasticService.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.dilmen.*" />
@@ -201,10 +181,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ETrade_Micro_Services [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ETrade_Micro_Services:ElasticService [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ElasticService" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -212,7 +192,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -224,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.ElasticServiceApplication" />
+        <item itemvalue="Gradle.ETrade_Micro_Services:ElasticService [build]" />
         <item itemvalue="Application.AuthServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Gradle.ETrade_Micro_Services [dependencies]" />
-        <item itemvalue="Application.CloudConfigApplication" />
-        <item itemvalue="Application.UserServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -311,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678110954943</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Rabbitmq direct exchange is set">
+      <created>1678224116702</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678224116702</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -324,7 +311,8 @@
     <MESSAGE value="Jwt Token implemented on Auth and User services" />
     <MESSAGE value="Server Configurations are set" />
     <MESSAGE value="Spring based ApiGateway is set and Zipkin is set for Auth and User services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring based ApiGateway is set and Zipkin is set for Auth and User services" />
+    <MESSAGE value="Rabbitmq direct exchange is set" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rabbitmq direct exchange is set" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

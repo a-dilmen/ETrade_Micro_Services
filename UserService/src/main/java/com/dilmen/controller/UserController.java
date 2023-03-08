@@ -28,5 +28,14 @@ public class UserController {
         public ResponseEntity<List<User>> getAll(@Valid BaseRequestDto dto){
                 return ResponseEntity.ok(userService.getAll(dto.getToken()));
         }
+        @GetMapping("/getname")
+        public ResponseEntity<String > getUpperName(String name){
+                return ResponseEntity.ok(userService.getUpperName(name));
+        }
+        @GetMapping("/clearcache")
+        public ResponseEntity<String > clearCache(){
+                userService.clearCache();
+                return ResponseEntity.ok().build();
+        }
 
 }

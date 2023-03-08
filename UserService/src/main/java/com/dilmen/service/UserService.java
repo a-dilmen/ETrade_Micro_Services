@@ -9,6 +9,8 @@ import com.dilmen.repository.entity.User;
 import com.dilmen.utils.JwtTokenManager;
 import com.dilmen.utils.ServiceManager;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -36,6 +38,20 @@ public class UserService extends ServiceManager<User,Long> {
                 Optional<User> user = userRepository.findOptionalByAuthId(authId.get());
                 if (user.isEmpty()) throw new UserException(EErrorType.INVALID_TOKEN,"No user found with given token");
                 return findAll();
+        }
+
+        @Cacheable(value = "getUpperName")
+        public String getUpperName(String name){
+                try {
+                        Thread.sleep(3000);
+                }catch (Exception exception){
+
+                }
+                return name.toUpperCase();
+        }
+        @CacheEvict(value = "getUpperName",  allEntries = true)
+        public void clearCache(){
+                System.out.println("cache is cleared");
         }
 
 
