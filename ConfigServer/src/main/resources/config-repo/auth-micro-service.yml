@@ -15,7 +15,8 @@ spring:
 
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${ETRADE_PG_GCLOUD_URL}/AuthDB
+    url: jdbc:postgresql://localhost:5432/AuthDB
+#    url: jdbc:postgresql://${ETRADE_PG_GCLOUD_URL}/AuthDB
     username: ${ETRADE_PG_USERNAME}
     password: ${ETRADE_PG_PASSWORD}
   jpa:

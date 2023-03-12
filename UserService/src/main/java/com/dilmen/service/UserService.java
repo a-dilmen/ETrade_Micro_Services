@@ -11,6 +11,7 @@ import com.dilmen.utils.ServiceManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -45,13 +46,20 @@ public class UserService extends ServiceManager<User,Long> {
                 try {
                         Thread.sleep(3000);
                 }catch (Exception exception){
-
+                        System.err.println("Real unexpected stuff");
                 }
                 return name.toUpperCase();
         }
         @CacheEvict(value = "getUpperName",  allEntries = true)
         public void clearCache(){
                 System.out.println("cache is cleared");
+        }
+
+
+        @Scheduled(fixedRate = 6000000)
+        public void evictAllcachesAtIntervals() {
+
+                clearCache();
         }
 
 

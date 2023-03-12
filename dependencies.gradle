@@ -10,10 +10,11 @@ ext {
     ]
     libs = [
             springBootStarterWeb        : "org.springframework.boot:spring-boot-starter-web:$versions.springBoot",
+            springBootStarterValidation : "org.springframework.boot:spring-boot-starter-validation:$versions.springBoot",
+
             springBootStarterDataJpa    : "org.springframework.boot:spring-boot-starter-data-jpa:$versions.springBoot",
             springBootStarterDataRedis  : "org.springframework.boot:spring-boot-starter-data-redis:$versions.springBoot",
             springBootStarterDataElasticSearch    : "org.springframework.boot:spring-boot-starter-data-elasticsearch:$versions.springBoot",
-            springBootStarterValidation : "org.springframework.boot:spring-boot-starter-validation:$versions.springBoot",
 
             springCloudOpenFeign        : "org.springframework.cloud:spring-cloud-starter-openfeign:$versions.springCloud",
             springCloudConfig           : "org.springframework.cloud:spring-cloud-starter-config:$versions.springCloud",

@@ -1,6 +1,17 @@
 server:
   port: 80
 
+
+# This is to delay circuit breaker when called getname endpoint which takes 3+ secs
+resilience4j.timelimiter:
+  instances:
+    backendA:
+      timeoutDuration: 4s
+      cancelRunningFuture: true
+    backendB:
+      timeoutDuration: 1s
+      cancelRunningFuture: false
+
 spring:
   zipkin:
     enabled: true

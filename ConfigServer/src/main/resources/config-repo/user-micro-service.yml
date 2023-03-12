@@ -13,7 +13,8 @@ spring:
       name: user-micro-service
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${ETRADE_PG_GCLOUD_URL}/UserDB
+    url: jdbc:postgresql://localhost:5432/UserDB
+#    url: jdbc:postgresql://${ETRADE_PG_GCLOUD_URL}/UserDB
     username: ${ETRADE_PG_USERNAME}
     password: ${ETRADE_PG_PASSWORD}
   jpa:

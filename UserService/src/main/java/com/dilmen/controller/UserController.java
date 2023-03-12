@@ -32,6 +32,7 @@ public class UserController {
         public ResponseEntity<String > getUpperName(String name){
                 return ResponseEntity.ok(userService.getUpperName(name));
         }
+
         @GetMapping("/clearcache")
         public ResponseEntity<String > clearCache(){
                 userService.clearCache();
