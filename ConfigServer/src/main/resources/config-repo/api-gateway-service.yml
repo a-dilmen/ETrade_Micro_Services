@@ -3,14 +3,13 @@ server:
 
 
 # This is to delay circuit breaker when called getname endpoint which takes 3+ secs
+# https://docs.spring.io/spring-cloud-circuitbreaker/docs/current/reference/html/
 resilience4j.timelimiter:
-  instances:
-    backendA:
+  configs:
+    default:
       timeoutDuration: 4s
-      cancelRunningFuture: true
-    backendB:
-      timeoutDuration: 1s
       cancelRunningFuture: false
+
 
 spring:
   zipkin:

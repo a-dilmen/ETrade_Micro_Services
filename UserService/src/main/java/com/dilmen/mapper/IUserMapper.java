@@ -1,5 +1,6 @@
 package com.dilmen.mapper;
 
+import com.dilmen.dto.request.UserProfileSaveRequestDto;
 import com.dilmen.dto.request.UserSaveRequestDto;
 import com.dilmen.dto.response.AuthRegisterResponseDto;
 import com.dilmen.repository.entity.User;
@@ -14,6 +15,8 @@ public interface IUserMapper {
         User userFromUserSaveRequestDto(final UserSaveRequestDto dto);
 
         AuthRegisterResponseDto authRegisterResponseDtoFromAuth(final User user);
+
+        UserProfileSaveRequestDto userProfileSaveRequestDtofromUser(final User user);
 
 
 }
